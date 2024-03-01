@@ -28,7 +28,7 @@ check = str(post_response_json)
 #match substring of long default msg from return response of call
 if "1" in check:
 	#turn left
-	print("door1")
+	print("turning left to door 1")
 else:
 	#turn right
-	print("door2")
+	print("turning right to door 2")
