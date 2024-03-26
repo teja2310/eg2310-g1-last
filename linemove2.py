@@ -93,7 +93,7 @@ self.shoot_callback, 10)
 					twist.angular.z = 0.3
 					time.sleep(0.1)
 					self.publisher_.publish(twist)
-					while self.left == False or self.right == False:
+					while self.right == False:
 						print(self.sideL, self.left, self.right, self.sideR)
 						rclpy.spin_once(self)
 						time.sleep(0.1)
@@ -109,7 +109,7 @@ self.shoot_callback, 10)
 					twist.angular.z = -0.3
 					time.sleep(0.1)
 					self.publisher_.publish(twist)
-					while self.left == False or self.right == False:
+					while self.left == False:
 						rclpy.spin_once(self)
 						time.sleep(0.1)
 					twist.linear.x = 0.0
